@@ -1,0 +1,106 @@
+// %%%%%%%%%%%%%%%%  CHAPTER 21 - 25   %%%%%%%%%%%%%%%%
+
+//     *********   QUESTION # 1  *********
+/*
+var firstName = prompt("Enter your first name")
+var lastName = prompt("Enter your last name")
+var fullName = ("Welcome "+ firstName + " " + lastName)
+alert(fullName.toUpperCase());   */
+
+//     *********   QUESTION # 2  *********
+/*
+var favMobile = prompt("What is your fav mobile model")
+var model = ("My favourite phone is: "+ favMobile )
+document.write(model +"<br>" + "length of string is "+ model.length)  */
+
+//     *********   QUESTION # 3  *********
+/*
+var citizenship = "Pakistani";
+document.write("String: Pakistani" +  "<br>index of n :" + citizenship.indexOf("n") )  */
+
+//     *********   QUESTION # 4  *********
+/*
+var greet = "Hello World";
+document.write("String: Hello World" +  "<br>last index of l is :" + greet.lastIndexOf("l") )   */
+
+//     *********   QUESTION # 5  *********
+/*
+var citizenship = "Pakistani";
+document.write("String: Pakistani" +  "<br>index of 'i' is:" + citizenship.indexOf("i") )  */
+
+//     *********   QUESTION # 6  *********
+/*
+var Name = prompt("Enter your first name") +" "+ prompt("Enter your last name")
+alert("Welcome " + Name.toUpperCase())   */
+
+//     *********   QUESTION # 7  *********
+/*
+var city = "Hyderabad";
+var result = city.replace("Hyder" , "Islam")
+document.write("City: Hyderabad <br>" + "After replacment: "+ result)  */
+
+//     *********   QUESTION # 8  *********
+/*
+var message = "Ali and Sami are best friends. They play cricket and football together" ;
+var newMessage = message.replace(/and/g , "&");
+document.write(newMessage)  */
+
+//     *********   QUESTION # 9  *********
+/*
+var num = "472";
+var result = parseInt(num);
+document.write("Value: " + num +"<br> Type: "+ typeof num +"<br> Value: " 
+                + result +"<br> Type: "+ typeof result)  */
+
+//     *********   QUESTION # 10  *********
+/*
+var userInput = prompt("Write something to convert into upper case");
+document.write(userInput.toUpperCase())  */
+
+//     *********   QUESTION # 10  *********
+/*
+var userInput = prompt("Write something to convert into title case");
+
+function titleCase(userInput) {
+    userInput = userInput.toLowerCase().split(' ');
+    for (var i = 0; i < userInput.length; i++) {
+        userInput[i] = userInput[i].charAt(0).toUpperCase() + userInput[i].slice(1); 
+    }
+    return userInput.join(' ');
+  }
+
+   titleCase(userInput);  */
+
+//     *********   QUESTION # 12  *********
+/*
+var num = 35.45;
+num = num.toString();
+document.write(num)
+document.write("<br>" + typeof num)   */
+
+//     *********   QUESTION # 13  *********
+/*
+var userName = prompt("enter your name");
+
+if(userName = 33 || 43 || 46 || 64) {
+    document.write("Please enter a valid username")   XXX
+}
+else if (userName != 33 || 43 || 46 || 64) {
+    document.write(userName)
+}   */
+
+//     *********   QUESTION # 14  *********
+/*
+var arr =["cake" , "bread" , "muffins" , "dounut" , "chips" , "patties"]
+var search = prompt("WELCOME!..What do you want to order"); 
+search = search.toLowerCase();
+for(var i = 0; i <= arr.length; i++){
+
+    if(arr[i] === search){
+        document.write(search + " is in our bakery at " + arr.indexOf(search) )
+    }
+    else if(arr[i] !== search){
+        document.write(search + " is not available "  )
+        break;
+    }
+}   */
